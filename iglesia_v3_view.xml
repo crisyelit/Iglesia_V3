@@ -1,0 +1,448 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="view_ig_base_dependencia_iglesia_form">
+        <field name="name">ig.base.dependencia_iglesia.form</field>
+        <field name="model">ig.base.dependencia_iglesia</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.base.dependencia_iglesia">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="tipo" select="2"/>
+                <field name="nombre" select="0"/>
+                <separator string="Ubicación"" colspan="4"/>
+                <field name="ubicacion" colspan="4" nolabel="1" select="0"/>
+                <separator string="size=150" colspan="4"/>
+                <field name="direccion" colspan="4" nolabel="1" select="0"/>
+                <field name="miembro_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_base_dependencia_iglesia_tree">
+        <field name="name">ig.base.dependencia_iglesia.tree</field>
+        <field name="model">ig.base.dependencia_iglesia</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.base.dependencia_iglesia">
+                <field name="codigo"/>
+                <field name="tipo"/>
+                <field name="nombre"/>
+                <field name="ubicacion"/>
+                <field name="direccion"/>
+                <field name="miembro_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_base_dependencia_iglesia">
+        <field name="name">Iglesia</field>
+        <field name="res_model">ig.base.dependencia_iglesia</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_base_dependencia_ministerio_form">
+        <field name="name">ig.base.dependencia_ministerio.form</field>
+        <field name="model">ig.base.dependencia_ministerio</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.base.dependencia_ministerio">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <separator string="Ubicación"" colspan="4"/>
+                <field name="ubicacion" colspan="4" nolabel="1" select="0"/>
+                <field name="ministerio_id" select="0"/>
+                <field name="lider_ministerio" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_base_dependencia_ministerio_tree">
+        <field name="name">ig.base.dependencia_ministerio.tree</field>
+        <field name="model">ig.base.dependencia_ministerio</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.base.dependencia_ministerio">
+                <field name="codigo"/>
+                <field name="nombre"/>
+                <field name="ubicacion"/>
+                <field name="ministerio_id"/>
+                <field name="lider_ministerio"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_base_dependencia_ministerio">
+        <field name="name">Ministerio</field>
+        <field name="res_model">ig.base.dependencia_ministerio</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_base_dependencia_celula_form">
+        <field name="name">ig.base.dependencia_celula.form</field>
+        <field name="model">ig.base.dependencia_celula</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.base.dependencia_celula">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <separator string="Ubicación"" colspan="4"/>
+                <field name="ubicacion" colspan="4" nolabel="1" select="0"/>
+                <field name="celula_id" select="0"/>
+                <field name="lider_celula" select="0"/>
+                <separator string="= "miembros de celula"" colspan="4"/>
+                <field name="miembro_id" colspan="4" nolabel="1" select="0"/>
+                <field name="anfitrion" select="0"/>
+                <field name="ayudante" select="0"/>
+                <separator string="invitados a la celula"" colspan="4"/>
+                <field name="invitados" colspan="4" nolabel="1" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_base_dependencia_celula_tree">
+        <field name="name">ig.base.dependencia_celula.tree</field>
+        <field name="model">ig.base.dependencia_celula</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.base.dependencia_celula">
+                <field name="codigo"/>
+                <field name="nombre"/>
+                <field name="ubicacion"/>
+                <field name="celula_id"/>
+                <field name="lider_celula"/>
+                <field name="anfitrion"/>
+                <field name="ayudante"/>
+                <field name="invitados"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_base_dependencia_celula">
+        <field name="name">Celula</field>
+        <field name="res_model">ig.base.dependencia_celula</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_base_dependencia_comision_form">
+        <field name="name">ig.base.dependencia_comision.form</field>
+        <field name="model">ig.base.dependencia_comision</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.base.dependencia_comision">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <separator string="Ubicación"" colspan="4"/>
+                <field name="ubicacion" colspan="4" nolabel="1" select="0"/>
+                <field name="comision_id" select="0"/>
+                <field name="lider_ministerio" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_base_dependencia_comision_tree">
+        <field name="name">ig.base.dependencia_comision.tree</field>
+        <field name="model">ig.base.dependencia_comision</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.base.dependencia_comision">
+                <field name="codigo"/>
+                <field name="nombre"/>
+                <field name="ubicacion"/>
+                <field name="comision_id"/>
+                <field name="lider_ministerio"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_base_dependencia_comision">
+        <field name="name">Comision</field>
+        <field name="res_model">ig.base.dependencia_comision</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_iglesia_estudios_teologicos_form">
+        <field name="name">ig.iglesia.estudios_teologicos.form</field>
+        <field name="model">ig.iglesia.estudios_teologicos</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.iglesia.estudios_teologicos">
+            <group col="4" colspan="2">
+                <field name="miembro_id" select="1"/>
+                <field name="inste" select="2"/>
+                <separator string="Observaciones"" colspan="4"/>
+                <field name="observacion" colspan="4" nolabel="1" select="0"/>
+                <field name="teologia_universitaria" select="0"/>
+                <field name="escuela_obrero" select="0"/>
+                <field name="discipulado" select="0"/>
+                <separator string=" "Otros Estudios"" colspan="4"/>
+                <field name="otros" colspan="4" nolabel="1" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_iglesia_estudios_teologicos_tree">
+        <field name="name">ig.iglesia.estudios_teologicos.tree</field>
+        <field name="model">ig.iglesia.estudios_teologicos</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.iglesia.estudios_teologicos">
+                <field name="miembro_id"/>
+                <field name="inste"/>
+                <field name="observacion"/>
+                <field name="teologia_universitaria"/>
+                <field name="escuela_obrero"/>
+                <field name="discipulado"/>
+                <field name="otros"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_iglesia_estudios_teologicos">
+        <field name="name">Teologicos</field>
+        <field name="res_model">ig.iglesia.estudios_teologicos</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_iglesia_miembros_form">
+        <field name="name">ig.iglesia.miembros.form</field>
+        <field name="model">ig.iglesia.miembros</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.iglesia.miembros">
+            <group col="4" colspan="2">
+                <field name="cedula" select="1"/>
+                <field name="nombres" select="2"/>
+                <field name="apellidos" select="0"/>
+                <field name="cargo_ministerial" select="0"/>
+                <field name="dependencia_ministerio_id" select="0"/>
+                <field name="dependencia_comision_id" select="0"/>
+                <field name="dependencia_celula_id" select="0"/>
+                <field name="email" select="0"/>
+                <field name="telefono_personal" select="0"/>
+                <field name="direccion_habitacion" select="0"/>
+                <field name="direccion_trabajo" select="0"/>
+                <field name="telefono_trabajo" select="0"/>
+                <field name="fecha_nac" select="0"/>
+                <field name="estado_civil" select="0"/>
+                <field name="dependencia_iglesia_id" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_iglesia_miembros_tree">
+        <field name="name">ig.iglesia.miembros.tree</field>
+        <field name="model">ig.iglesia.miembros</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.iglesia.miembros">
+                <field name="cedula"/>
+                <field name="nombres"/>
+                <field name="apellidos"/>
+                <field name="cargo_ministerial"/>
+                <field name="dependencia_ministerio_id"/>
+                <field name="dependencia_comision_id"/>
+                <field name="dependencia_celula_id"/>
+                <field name="email"/>
+                <field name="telefono_personal"/>
+                <field name="direccion_habitacion"/>
+                <field name="direccion_trabajo"/>
+                <field name="telefono_trabajo"/>
+                <field name="fecha_nac"/>
+                <field name="estado_civil"/>
+                <field name="dependencia_iglesia_id"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_iglesia_miembros">
+        <field name="name">Miembros</field>
+        <field name="res_model">ig.iglesia.miembros</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_iglesia_familia_form">
+        <field name="name">ig.iglesia.familia.form</field>
+        <field name="model">ig.iglesia.familia</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.iglesia.familia">
+            <group col="4" colspan="2">
+                <field name="codigo" select="1"/>
+                <field name="nombre" select="2"/>
+                <separator string=""tipos de parentesco"" colspan="4"/>
+                <field name="tipo_familia" colspan="4" nolabel="1" select="0"/>
+                <field name="parentesco" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_iglesia_familia_tree">
+        <field name="name">ig.iglesia.familia.tree</field>
+        <field name="model">ig.iglesia.familia</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.iglesia.familia">
+                <field name="codigo"/>
+                <field name="nombre"/>
+                <field name="parentesco"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_iglesia_familia">
+        <field name="name">Nucleo Familiar</field>
+        <field name="res_model">ig.iglesia.familia</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_iglesia_estudios_seculares_form">
+        <field name="name">ig.iglesia.estudios_seculares.form</field>
+        <field name="model">ig.iglesia.estudios_seculares</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.iglesia.estudios_seculares">
+            <group col="4" colspan="2">
+                <field name="miembro_id" select="1"/>
+                <field name="Primaria" select="2"/>
+                <separator string="Observaciones"" colspan="4"/>
+                <field name="observacion" colspan="4" nolabel="1" select="0"/>
+                <field name="universidad" select="0"/>
+                <field name="bachillerato" select="0"/>
+                <separator string=" "Otros Estudios"" colspan="4"/>
+                <field name="otros_estudios" colspan="4" nolabel="1" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_iglesia_estudios_seculares_tree">
+        <field name="name">ig.iglesia.estudios_seculares.tree</field>
+        <field name="model">ig.iglesia.estudios_seculares</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.iglesia.estudios_seculares">
+                <field name="miembro_id"/>
+                <field name="Primaria"/>
+                <field name="observacion"/>
+                <field name="universidad"/>
+                <field name="bachillerato"/>
+                <field name="otros_estudios"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_iglesia_estudios_seculares">
+        <field name="name">Seculares</field>
+        <field name="res_model">ig.iglesia.estudios_seculares</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+        
+    <record model="ir.ui.view" id="view_ig_iglesia_eclesiastico_form">
+        <field name="name">ig.iglesia.eclesiastico.form</field>
+        <field name="model">ig.iglesia.eclesiastico</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ig.iglesia.eclesiastico">
+            <group col="4" colspan="2">
+                <field name="miembro_id" select="1"/>
+                <field name="bautizo" select="2"/>
+                <separator string="Observaciones"" colspan="4"/>
+                <field name="observacion" colspan="4" nolabel="1" select="0"/>
+                <field name="creyente" select="0"/>
+                <field name="encuentro" select="0"/>
+                <field name="fecha_conversion" select="0"/>
+                <separator string=""¿Donde se convirtio?"" colspan="4"/>
+                <field name="lugar_conversion" colspan="4" nolabel="1" select="0"/>
+                <field name="asistencia" select="0"/>
+                <field name="fecha_bautizado" select="0"/>
+                <separator string="todos en su familia estan convertidos"" colspan="4"/>
+                <field name="todos_convertidos" colspan="4" nolabel="1" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="view_ig_iglesia_eclesiastico_tree">
+        <field name="name">ig.iglesia.eclesiastico.tree</field>
+        <field name="model">ig.iglesia.eclesiastico</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ig.iglesia.eclesiastico">
+                <field name="miembro_id"/>
+                <field name="bautizo"/>
+                <field name="observacion"/>
+                <field name="creyente"/>
+                <field name="encuentro"/>
+                <field name="fecha_conversion"/>
+                <field name="lugar_conversion"/>
+                <field name="asistencia"/>
+                <field name="fecha_bautizado"/>
+                <field name="todos_convertidos"/>
+
+            </tree>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_ig_iglesia_eclesiastico">
+        <field name="name">Eclesiastico</field>
+        <field name="res_model">ig.iglesia.eclesiastico</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+<menuitem name="Iglesia" id="menu_ig"
+
+    <menuitem name="Membresia" id="menu_membresia" parent="menu_memb"/>
+        <menuitem name="Iglesia/Registro/Miembros" id="menu_ig_iglesia_miembros" action="action_ig_iglesia_miembros"/>
+    
+    
+    
+    <menuitem name="Configuracion" id="menu_configuracion" parent="menu_memb"/>
+        <menuitem name="Iglesia/Configuración/Dependencia/Iglesia" id="menu_ig_base_dependencia_iglesia" action="action_ig_base_dependencia_iglesia"/>
+        <menuitem name="Iglesia/Eclesiastico" id="menu_ig_iglesia_eclesiastico" action="action_ig_iglesia_eclesiastico"/>
+        <menuitem name="Iglesia/Configuración/Nucleo Familiar" id="menu_ig_iglesia_familia" action="action_ig_iglesia_familia"/>
+        <menuitem name="Iglesia/Configuración/Dependencia/Comision" id="menu_ig_base_dependencia_comision" action="action_ig_base_dependencia_comision"/>
+        <menuitem name="Iglesia/Configuración/Dependencia/Celula" id="menu_ig_base_dependencia_celula" action="action_ig_base_dependencia_celula"/>
+        <menuitem name="Iglesia/Configuración/Dependencia/Ministerio" id="menu_ig_base_dependencia_ministerio" action="action_ig_base_dependencia_ministerio"/>
+        <menuitem name="Iglesia/Estudios/Seculares" id="menu_ig_iglesia_estudios_seculares" action="action_ig_iglesia_estudios_seculares"/>
+        <menuitem name="Iglesia/Estudios/Teologicos" id="menu_ig_iglesia_estudios_teologicos" action="action_ig_iglesia_estudios_teologicos"/>
+
+</data>
+</openerp>

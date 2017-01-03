@@ -1,0 +1,10 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_ig_base_dependencia_iglesia","ig.base.dependencia_iglesia","model_ig_base_dependencia_iglesia","base.group_user",1,0,0,0
+"access_ig_base_dependencia_ministerio","ig.base.dependencia_ministerio","model_ig_base_dependencia_ministerio","base.group_user",1,0,0,0
+"access_ig_base_dependencia_celula","ig.base.dependencia_celula","model_ig_base_dependencia_celula","base.group_user",1,0,0,0
+"access_ig_base_dependencia_comision","ig.base.dependencia_comision","model_ig_base_dependencia_comision","base.group_user",1,0,0,0
+"access_ig_iglesia_estudios_teologicos","ig.iglesia.estudios_teologicos","model_ig_iglesia_estudios_teologicos","base.group_user",1,0,0,0
+"access_ig_iglesia_miembros","ig.iglesia.miembros","model_ig_iglesia_miembros","base.group_user",1,0,0,0
+"access_ig_iglesia_familia","ig.iglesia.familia","model_ig_iglesia_familia","base.group_user",1,0,0,0
+"access_ig_iglesia_estudios_seculares","ig.iglesia.estudios_seculares","model_ig_iglesia_estudios_seculares","base.group_user",1,0,0,0
+"access_ig_iglesia_eclesiastico","ig.iglesia.eclesiastico","model_ig_iglesia_eclesiastico","base.group_user",1,0,0,0
